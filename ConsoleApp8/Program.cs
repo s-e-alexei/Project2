@@ -27,8 +27,13 @@ namespace Project2
             b = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Input c:");
             c = Convert.ToDouble(Console.ReadLine());
-            r = ((b + (Math.Sqrt(b * b + 4 * a * c)) / 2 * a) - (Math.Pow(a, 3) * c + Math.Pow(b, -2)));
-            Console.WriteLine("r = " + r);
+            if (a != 0)
+            {
+                r = ((b + (Math.Sqrt(b * b + 4 * a * c)) / 2 * a) - (Math.Pow(a, 3) * c + Math.Pow(b, -2)));
+                Console.WriteLine("r = " + r);
+            }
+            else
+                Console.WriteLine("Diviion by zero");
         }
         ///Задание №2
         public static void task2()
